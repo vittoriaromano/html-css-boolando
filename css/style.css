@@ -21,7 +21,7 @@ body{
 
 /* header */
 header{
-    background-color: orange;
+    background-color: #ff6900;
     width: 100%;
     display: flex;
     align-items: center;
@@ -49,16 +49,7 @@ header{
 }
 
 /* main */
-.img-hov{
-    display: none;
-    position: relative;
-    top: 100%;
-    
-}
-.box:hover .img-hov{
-    display: display;
-    transition: 1s;
-}
+
 .box-con{
     margin: 100px auto;
     max-width: 80%;
@@ -66,8 +57,8 @@ header{
     justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
-    
 }
+
 .box{
     position: absolute;
     flex-basis: 25%;
@@ -77,6 +68,17 @@ header{
     width: 100%;
     display: block;
 }
+.img-hov{
+    display: none;
+    width: 100%;
+}
+.box:hover > .img-hov {
+	display: block;
+    transition: 1s;
+}
+.box:hover > .img {
+    display: none;
+  }
 .caption{
     padding: 8px;
     color: white;
@@ -90,6 +92,18 @@ header{
 .descrizione{
     background-color: green;
     left: 50px;
+}
+.cuore{
+    background-color: aliceblue;
+    color: black;
+    font-size: 10px;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    right:0px;
+}
+.box:hover > .cuore{
+    color: red;
 }
 
 .marca{
@@ -106,10 +120,17 @@ header{
 .prezzo{
     text-decoration: line-through;
 }
+
+#speciale{
+    position: absolute;
+    font-size: 12px;
+    top: 375px;
+    left: 0;
+}
 /* footer */
 
 footer{
-    background-color: rgb(21, 25, 41);
+    background-color: #1a1a1a;
     width: 100%;
     display: flex;
     color: white;
@@ -124,18 +145,13 @@ footer{
 }
 .icon{
     display: flex;
-    gap: 10px;
+    gap:10px ;
 }
 
-footer .contenuto-footer .info h2,p{
+footer .contenuto-footer .info h2,a{
+    display: flex;
+    font-size: 0.8em;
+}
+.info-link{
     display: flex;
 }
-/* .contenuto-footer .info p{
-    display: flex;
-}
-
-.app{
-    display: flex;
-    left: 50px;
-
-} */
