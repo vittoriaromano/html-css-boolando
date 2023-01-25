@@ -7,14 +7,41 @@
 
 body{
     font-family: 'Nunito Sans', sans-serif;
+    /* color: white; */
 }
 
 /* common */
+.sezioni{
+    display: flex;
+    gap: 10px;
+}
+.cont-liste{
+    text-decoration: none;
+    color: white;
+    display: flex;
 
-
+} 
 
 /* header */
+header{
+    background-color: orange;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contenuto-header{
+    height: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    align-items: center;
+    width: 100%;
+}
 
+.logo{
+    width: 150px;
+}
 
 /* main */
 
