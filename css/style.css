@@ -44,6 +44,21 @@ header{
 }
 
 /* main */
-
+.box-con{
+    margin: 100px auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
+.box{
+    background-color: blue;
+    border: 1px solid black;
+    height: 30px;
+    flex-basis: 25%;
+    
+}
 
 /* footer */
