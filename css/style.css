@@ -11,10 +11,7 @@ body{
 }
 
 /* common */
-.sezioni{
-    display: flex;
-    gap: 10px;
-}
+
 .cont-liste{
     text-decoration: none;
     color: white;
@@ -28,6 +25,10 @@ header{
     width: 100%;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }
 .contenuto-header{
     height: 50px;
@@ -38,12 +39,26 @@ header{
     align-items: center;
     width: 100%;
 }
+.sezioni{
+    display: flex;
+    gap: 10px;
+}
 
 .logo{
     width: 150px;
 }
 
 /* main */
+.img-hov{
+    display: none;
+    position: relative;
+    top: 100%;
+    
+}
+.box:hover .img-hov{
+    display: display;
+    transition: 1s;
+}
 .box-con{
     margin: 100px auto;
     max-width: 80%;
@@ -54,6 +69,7 @@ header{
     
 }
 .box{
+    position: absolute;
     flex-basis: 25%;
     position: relative;
 }
@@ -91,3 +107,35 @@ header{
     text-decoration: line-through;
 }
 /* footer */
+
+footer{
+    background-color: rgb(21, 25, 41);
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.contenuto-footer{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 400px;
+    width:100% ;
+}
+.icon{
+    display: flex;
+    gap: 10px;
+}
+
+footer .contenuto-footer .info h2,p{
+    display: flex;
+}
+/* .contenuto-footer .info p{
+    display: flex;
+}
+
+.app{
+    display: flex;
+    left: 50px;
+
+} */
