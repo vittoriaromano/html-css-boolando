@@ -54,11 +54,40 @@ header{
     
 }
 .box{
-    background-color: blue;
-    border: 1px solid black;
-    height: 30px;
     flex-basis: 25%;
-    
+    position: relative;
+}
+.img{
+    width: 100%;
+    display: block;
+}
+.caption{
+    padding: 8px;
+    color: white;
+    position: absolute;
+    font-size: 12px;
+    top: 375px;
+}
+.percentuale{
+    background-color: red;
+}
+.descrizione{
+    background-color: green;
+    left: 50px;
 }
 
+.marca{
+    font-size: 12px;
+    color: lightgray;
+}
+
+.titolo{
+    font-size: 18px;
+}
+.sconto{
+    color: red;
+}
+.prezzo{
+    text-decoration: line-through;
+}
 /* footer */
